@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 export default function PortfolioPage() {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -13,13 +14,22 @@ export default function PortfolioPage() {
     { id: "street", label: "Street" },
   ];
 
+  // Portfolio images array
+  // Naming convention: category-number.jpg (e.g., family-1.jpg, portraits-2.jpg, event-1.jpg)
+  // Place your images in: public/images/portfolio/
   const images = [
-    { id: 1, category: "family", title: "Family Portrait 1" },
-    { id: 2, category: "family", title: "Family Portrait 2" },
-    { id: 3, category: "portraits", title: "Portrait 1" },
-    { id: 4, category: "events", title: "Event 1" },
-    { id: 5, category: "street", title: "Street 1" },
-    { id: 6, category: "family", title: "Family Portrait 3" },
+    { id: 1, category: "family", title: "Family Portrait 1", src: "/images/portfolio/family-1.jpg" },
+    { id: 2, category: "family", title: "Family Portrait 2", src: "/images/portfolio/family-2.jpg" },
+    { id: 3, category: "family", title: "Family Portrait 3", src: "/images/portfolio/family-3.jpg" },
+    { id: 4, category: "portraits", title: "Portrait 1", src: "/images/portfolio/portraits-1.jpg" },
+    { id: 5, category: "portraits", title: "Portrait 2", src: "/images/portfolio/portraits-2.jpg" },
+    { id: 6, category: "portraits", title: "Portrait 3", src: "/images/portfolio/portraits-3.jpg" },
+    { id: 7, category: "events", title: "Event 1", src: "/images/portfolio/event-1.jpg" },
+    { id: 8, category: "events", title: "Event 2", src: "/images/portfolio/event-2.jpg" },
+    { id: 9, category: "events", title: "Event 3", src: "/images/portfolio/event-3.jpg" },
+    { id: 10, category: "street", title: "Street 1", src: "/images/portfolio/street-1.jpg" },
+    { id: 11, category: "street", title: "Street 2", src: "/images/portfolio/street-2.jpg" },
+    { id: 12, category: "street", title: "Street 3", src: "/images/portfolio/street-3.jpg" },
   ];
 
   const filteredImages =
@@ -56,32 +66,19 @@ export default function PortfolioPage() {
           {filteredImages.map((image) => (
             <div
               key={image.id}
-              className="aspect-[4/5] bg-gray-200 hover:opacity-90 transition-opacity cursor-pointer group"
+              className="relative aspect-[4/5] bg-gray-200 overflow-hidden hover:opacity-90 transition-opacity cursor-pointer group"
             >
-              <div className="w-full h-full flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-16 h-16 mx-auto mb-4 text-gray-400">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1}
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"
-                      />
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z"
-                      />
-                    </svg>
-                  </div>
-                  <p className="text-sm text-gray-500">{image.title}</p>
-                </div>
+              <Image
+                src={image.src}
+                alt={image.title}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-end">
+                <p className="text-white text-sm p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                  {image.title}
+                </p>
               </div>
             </div>
           ))}

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white pt-32 pb-24">
@@ -5,32 +7,15 @@ export default function AboutPage() {
         <h1 className="text-4xl md:text-5xl font-serif mb-12 font-light">About Me</h1>
 
         <div className="grid md:grid-cols-[1fr,1.5fr] gap-12 mb-16">
-          <div className="aspect-[3/4] bg-gray-200">
-            <div className="w-full h-full flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-4 text-gray-400">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1}
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z"
-                    />
-                  </svg>
-                </div>
-                <p className="text-sm text-gray-500">Photographer Portrait</p>
-              </div>
-            </div>
+          <div className="relative aspect-[3/4] bg-gray-200 overflow-hidden">
+            <Image
+              src="/images/about/photographer.jpg"
+              alt="Mahesh Padmanabhan - Photographer"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 400px"
+              priority
+            />
           </div>
 
           <div className="space-y-6 text-gray-700 leading-relaxed">

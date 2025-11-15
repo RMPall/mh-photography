@@ -22,7 +22,13 @@ Name them exactly:
 ### Portfolio Images
 Add your portfolio images to: `public/images/portfolio/`
 
-You can name these anything (e.g., family-1.jpg, portrait-1.jpg, event-1.jpg)
+**Naming Convention:** `category-number.jpg`
+- Family photos: `family-1.jpg`, `family-2.jpg`, `family-3.jpg`, etc.
+- Portraits: `portraits-1.jpg`, `portraits-2.jpg`, `portraits-3.jpg`, etc.
+- Events: `event-1.jpg`, `event-2.jpg`, `event-3.jpg`, etc. (note: singular "event", not "events")
+- Street photography: `street-1.jpg`, `street-2.jpg`, `street-3.jpg`, etc.
+
+**Important:** After adding your images, update the `images` array in `app/portfolio/page.tsx` to match your actual filenames. The code currently expects 12 images (3 per category), but you can add or remove entries as needed.
 
 ### About Page Image
 Add your photographer portrait to: `public/images/about/`
