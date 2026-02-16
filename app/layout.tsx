@@ -17,8 +17,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Mahesh Padmanabhan | Professional Photographer",
-  description: "Professional photography services - Family, Portraits, Events, and Street Photography",
+  title: "7 Shades | Professional Photography",
+  description: "Capturing life in seven shades. Professional photography services - Family, Portraits, Events, and Street Photography",
 };
 
 export default function RootLayout({

@@ -8,14 +8,21 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-serif mb-4">Mahesh Padmanabhan</h3>
+            <div className="flex items-center gap-2 mb-4 relative">
+              <span className="relative text-2xl font-serif font-bold">
+                <span className="bg-gradient-to-r from-violet-500 via-purple-500 via-fuchsia-500 via-pink-500 via-rose-500 via-orange-500 to-amber-500 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
+                  7
+                </span>
+              </span>
+              <span className="text-lg font-serif italic">Shades</span>
+            </div>
             <p className="text-sm text-gray-400 mb-4">London, United Kingdom</p>
             <a
-              href="mailto:studio@maheshphotography.com"
+              href="mailto:hello@7shades.photography"
               className="text-sm hover:text-gray-300 transition-colors flex items-center gap-2"
             >
               <Mail className="w-4 h-4" />
-              studio@maheshphotography.com
+              hello@7shades.photography
             </a>
           </div>
 
@@ -101,7 +108,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8 text-center">
           <p className="text-xs text-gray-400">
-            © {new Date().getFullYear()} Mahesh Padmanabhan Photography. All rights reserved.
+            © {new Date().getFullYear()} 7 Shades. All rights reserved.
           </p>
           <div className="mt-4 flex justify-center gap-6 text-xs text-gray-400">
             <Link href="/privacy" className="hover:text-white transition-colors">

@@ -8,8 +8,8 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const heroImages = [
   {
     src: "/images/hero/slide-1.jpg",
-    title: "Capturing Life's Moments",
-    subtitle: "Professional Photography Services",
+    title: "Capturing Life in Seven Shades",
+    subtitle: "Every Moment, Infinite Depth",
   },
   {
     src: "/images/hero/slide-2.jpg",
@@ -67,6 +67,45 @@ export default function Home() {
             </div>
             <div className="absolute inset-0 bg-black/20"></div>
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
+              {/* Creative 7 Shades Brand Element */}
+              {index === 0 && (
+                <div className="absolute top-8 md:top-16 left-1/2 -translate-x-1/2 opacity-90">
+                  <div className="flex items-center gap-2 relative">
+                    {/* Sparkle particles around logo */}
+                    <div className="absolute -inset-4 pointer-events-none">
+                      {[...Array(7)].map((_, i) => {
+                        const angle = (i * 360) / 7;
+                        const radius = 25;
+                        const x = 50 + radius * Math.cos((angle * Math.PI) / 180);
+                        const y = 50 + radius * Math.sin((angle * Math.PI) / 180);
+                        return (
+                          <span
+                            key={i}
+                            className="absolute w-1 h-1 bg-white rounded-full animate-sparkle opacity-60"
+                            style={{
+                              left: `${x}%`,
+                              top: `${y}%`,
+                              animationDelay: `${i * 0.2}s`,
+                              animationDuration: '2s',
+                            }}
+                          />
+                        );
+                      })}
+                    </div>
+                    <span className="relative text-2xl md:text-3xl font-serif font-bold">
+                      <span className="bg-gradient-to-r from-violet-400 via-purple-400 via-fuchsia-400 via-pink-400 via-rose-400 via-orange-400 to-amber-400 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
+                        7
+                      </span>
+                      <span className="absolute inset-0 bg-gradient-to-r from-violet-400 via-purple-400 via-fuchsia-400 via-pink-400 via-rose-400 via-orange-400 to-amber-400 bg-clip-text text-transparent opacity-30 blur-sm animate-gradient bg-[length:200%_auto]" style={{ animationDelay: '0.5s' }}>
+                        7
+                      </span>
+                    </span>
+                    <span className="text-xl md:text-2xl font-serif italic tracking-wide">
+                      Shades
+                    </span>
+                  </div>
+                </div>
+              )}
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif mb-4 font-light tracking-tight">
                 {image.title}
               </h1>
@@ -111,10 +150,17 @@ export default function Home() {
       {/* Welcome Section */}
       <section className="py-24 px-4 md:px-16 lg:px-32">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-serif mb-8 font-light">Welcome to Mahesh Padmanabhan Photography</h2>
+          <div className="mb-8">
+            <h2 className="text-3xl md:text-4xl font-serif mb-4 font-light">
+              Welcome to <span className="font-bold">7 Shades</span>
+            </h2>
+            <p className="text-sm md:text-base uppercase tracking-[0.3em] text-gray-500 mb-8">
+              Capturing Life in Seven Shades
+            </p>
+          </div>
           <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-8">
-            Capturing the beauty of life's most precious moments through the art of photography. 
-            From intimate family portraits to vibrant street scenes, every image tells a unique story.
+            Every moment holds infinite shades of emotion, color, and story. At 7 Shades, we capture the depth and beauty of life's most precious moments through the art of photography. 
+            From intimate family portraits to vibrant street scenes, every image reveals a unique spectrum of human experience.
           </p>
           <Link
             href="/portfolio"

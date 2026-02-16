@@ -37,3 +37,91 @@ a {
     text-wrap: balance;
   }
 }
+
+/* 7 Shades Creative Animations */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  14.28% {
+    background-position: 16.66% 50%;
+  }
+  28.56% {
+    background-position: 33.33% 50%;
+  }
+  42.84% {
+    background-position: 50% 50%;
+  }
+  57.12% {
+    background-position: 66.66% 50%;
+  }
+  71.4% {
+    background-position: 83.33% 50%;
+  }
+  85.68% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Individual color cycle for more dramatic effect */
+@keyframes colorCycle {
+  0% { filter: hue-rotate(0deg); }
+  14.28% { filter: hue-rotate(51deg); }
+  28.56% { filter: hue-rotate(102deg); }
+  42.84% { filter: hue-rotate(153deg); }
+  57.12% { filter: hue-rotate(204deg); }
+  71.4% { filter: hue-rotate(255deg); }
+  85.68% { filter: hue-rotate(306deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(
+      calc(var(--sparkle-x, 0) * 10px),
+      calc(var(--sparkle-y, 0) * 10px)
+    ) scale(1);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-gradient {
+  animation: gradient 7s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+.animate-sparkle {
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}

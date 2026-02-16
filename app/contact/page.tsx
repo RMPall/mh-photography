@@ -120,10 +120,10 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-sm uppercase tracking-[0.1em] mb-1">Email</h3>
                     <a
-                      href="mailto:studio@maheshphotography.com"
+                      href="mailto:hello@7shades.photography"
                       className="text-gray-600 hover:text-black transition-colors"
                     >
-                      studio@maheshphotography.com
+                      hello@7shades.photography
                     </a>
                   </div>
                 </div>
