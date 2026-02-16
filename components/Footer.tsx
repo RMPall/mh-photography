@@ -58,7 +58,7 @@ export default function Footer() {
             <h4 className="text-sm uppercase tracking-[0.15em] mb-4">Follow</h4>
             <div className="flex gap-4">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/share/15YTE9gL9AX/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-gray-300 transition-colors"
@@ -67,7 +67,7 @@ export default function Footer() {
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/7_sevenshades?utm_source=qr&igsh=OHRxYm9zMHZyamN1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-gray-300 transition-colors"
