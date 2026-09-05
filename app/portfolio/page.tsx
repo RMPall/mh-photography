@@ -28,8 +28,6 @@ export default function PortfolioPage() {
     { id: 8, category: "events", title: "Event 2", src: "/images/portfolio/event-2.jpg" },
     { id: 9, category: "events", title: "Event 3", src: "/images/portfolio/event-3.jpg" },
     { id: 10, category: "street", title: "Street 1", src: "/images/portfolio/street-1.jpg" },
-    { id: 11, category: "street", title: "Street 2", src: "/images/portfolio/street-2.jpg" },
-    { id: 12, category: "street", title: "Street 3", src: "/images/portfolio/street-3.jpg" },
   ];
 
   const filteredImages =

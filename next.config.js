@@ -1,11 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    // Runtime optimization is disabled deliberately. Sharp's per-transform
-    // memory use exceeded the container's limit, so /_next/image returned 502s
-    // and crash-looped the server. Source images are pre-sized to 1920px on the
-    // longest edge, so next/image serves them directly with no transform.
-    unoptimized: true,
+    // Optimized variants are cached for 31 days rather than the 60s default,
+    // so each size is generated once per container instead of repeatedly.
+    minimumCacheTTL: 2678400,
   },
   async headers() {
     return [
