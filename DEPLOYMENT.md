@@ -106,7 +106,7 @@
 1. In Amplify Console, go to your app
 2. Click "Domain management" in the left sidebar
 3. Click "Add domain"
-4. Enter your domain name (e.g., `7shades.photography`)
+4. Enter your domain name (e.g., `7shades.co.uk`)
 5. Follow the DNS configuration instructions
 6. AWS will provide DNS records to add to your domain registrar
 
@@ -169,4 +169,5 @@ If you need to add environment variables later:
 **Your site will be live at:** `https://[your-app-id].amplifyapp.com`
 
 Good luck with your deployment! 🚀
+
 

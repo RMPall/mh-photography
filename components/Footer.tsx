@@ -18,11 +18,11 @@ export default function Footer() {
             </div>
             <p className="text-sm text-gray-400 mb-4">London, United Kingdom</p>
             <a
-              href="mailto:hello@7shades.photography"
+              href="mailto:mahesh@7shades.co.uk"
               className="text-sm hover:text-gray-300 transition-colors flex items-center gap-2"
             >
               <Mail className="w-4 h-4" />
-              hello@7shades.photography
+              mahesh@7shades.co.uk
             </a>
           </div>
 

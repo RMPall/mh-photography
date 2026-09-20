@@ -92,7 +92,7 @@ Edit the `navLinks` array in `components/Header.tsx` to modify navigation items.
 
 ## Support
 
-For questions or issues, contact: hello@7shades.photography
+For questions or issues, contact: mahesh@7shades.co.uk
 
 ---
 
