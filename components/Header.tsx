@@ -51,7 +51,7 @@ export default function Header() {
             </div>
             
             {/* Number 7 with animated gradient representing 7 shades */}
-            <span className="relative text-3xl md:text-4xl font-serif font-bold">
+            <span className="relative text-3xl md:text-4xl font-display font-bold">
               <span className="relative z-10 bg-gradient-to-r from-violet-600 via-purple-500 via-fuchsia-500 via-pink-500 via-rose-500 via-orange-500 to-amber-500 bg-clip-text text-transparent animate-gradient bg-[length:300%_auto]">
                 7
               </span>
@@ -62,7 +62,7 @@ export default function Header() {
             </span>
             
             {/* Shades text with hover effect */}
-            <span className="text-xl md:text-2xl font-serif italic tracking-wide relative group-hover:tracking-wider transition-all duration-300">
+            <span className="text-xl md:text-2xl font-display italic tracking-wide relative group-hover:tracking-wider transition-all duration-300">
               Shades
             </span>
             

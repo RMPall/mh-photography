@@ -9,12 +9,12 @@ export default function Footer() {
           {/* Contact Info */}
           <div>
             <div className="flex items-center gap-2 mb-4 relative">
-              <span className="relative text-2xl font-serif font-bold">
+              <span className="relative text-2xl font-display font-bold">
                 <span className="bg-gradient-to-r from-violet-500 via-purple-500 via-fuchsia-500 via-pink-500 via-rose-500 via-orange-500 to-amber-500 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
                   7
                 </span>
               </span>
-              <span className="text-lg font-serif italic">Shades</span>
+              <span className="text-lg font-display italic">Shades</span>
             </div>
             <p className="text-sm text-gray-400 mb-4">London, United Kingdom</p>
             <a

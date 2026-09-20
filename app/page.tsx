@@ -92,7 +92,7 @@ export default function Home() {
                         );
                       })}
                     </div>
-                    <span className="relative text-2xl md:text-3xl font-serif font-bold">
+                    <span className="relative text-2xl md:text-3xl font-display font-bold">
                       <span className="bg-gradient-to-r from-violet-400 via-purple-400 via-fuchsia-400 via-pink-400 via-rose-400 via-orange-400 to-amber-400 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
                         7
                       </span>
@@ -100,7 +100,7 @@ export default function Home() {
                         7
                       </span>
                     </span>
-                    <span className="text-xl md:text-2xl font-serif italic tracking-wide">
+                    <span className="text-xl md:text-2xl font-display italic tracking-wide">
                       Shades
                     </span>
                   </div>
