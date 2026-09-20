@@ -133,10 +133,10 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-sm uppercase tracking-[0.1em] mb-1">Phone</h3>
                     <a
-                      href="tel:+447123456789"
+                      href="tel:+447765218836"
                       className="text-gray-600 hover:text-black transition-colors"
                     >
-                      +44 7123 456 789
+                      07765 218836
                     </a>
                   </div>
                 </div>
