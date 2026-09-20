@@ -17,8 +17,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "7 Shades | Professional Photography",
-  description: "Capturing life in seven shades. Professional photography services - Family, Portraits, Events, and Street Photography",
+  title: "7 Shades | Photography & Filmmaking",
+  description:
+    "7 Shades is a photography and filmmaking studio founded by Mahesh Padmanabhan, based in London. Portraits, families, events, corporate, cultural events and street photography, alongside videography, cinematography and aerial drone work.",
 };
 
 export default function RootLayout({

@@ -159,8 +159,10 @@ export default function Home() {
             </p>
           </div>
           <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-8">
-            Every moment holds infinite shades of emotion, color, and story. At 7 Shades, we capture the depth and beauty of life's most precious moments through the art of photography. 
-            From intimate family portraits to vibrant street scenes, every image reveals a unique spectrum of human experience.
+            7 Shades is a photography and filmmaking studio founded by Mahesh Padmanabhan, based in
+            London and focused on capturing people, moments and stories through natural and creative
+            visual storytelling. From portraits and family shoots to events, corporate work and
+            cinematic film, every project is approached individually.
           </p>
           <Link
             href="/portfolio"
@@ -178,16 +180,19 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-12">
             {[
               {
-                title: "Family & Portraits",
-                description: "Capturing authentic moments and connections that you'll treasure forever.",
+                title: "Portraits & Family",
+                description:
+                  "Portraits, family and couple shoots, and model and portfolio sessions, shot to feel natural and unforced.",
               },
               {
-                title: "Events & Celebrations",
-                description: "Professional coverage of your special occasions and milestones.",
+                title: "Events & Corporate",
+                description:
+                  "Events and celebrations, corporate photography, cultural events, live performances and street photography.",
               },
               {
-                title: "Street & Documentary",
-                description: "Telling stories through candid moments and urban landscapes.",
+                title: "Film & Aerial",
+                description:
+                  "Videography and cinematography, with aerial photography and cinematic drone footage for suitable projects.",
               },
             ].map((service, index) => (
               <div key={index} className="text-center">

@@ -67,7 +67,7 @@ export default function Footer() {
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="https://www.instagram.com/7_sevenshades?utm_source=qr&igsh=OHRxYm9zMHZyamN1"
+                href="https://www.instagram.com/7_sevenshades/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-gray-300 transition-colors"

@@ -3,52 +3,92 @@ import Link from "next/link";
 export default function ServicesPage() {
   const services = [
     {
-      title: "Family & Portrait Photography",
+      title: "Portraits, Families & Couples",
       description:
-        "Capture your family's unique story with authentic, natural photographs. Perfect for family reunions, milestone celebrations, or just because.",
+        "Portrait, family and couple sessions shot to feel relaxed and unforced. The aim is to make people comfortable in front of the camera, so genuine expressions and natural moments become part of the story.",
       features: [
-        "1-2 hour session",
-        "Location of your choice",
-        "30-50 edited high-resolution images",
-        "Online gallery",
+        "Indoor or outdoor locations",
+        "Relaxed, natural direction on the day",
+        "Edited, high-resolution images",
+        "Professional colour grading",
       ],
-      price: "From £350",
     },
     {
-      title: "Event Photography",
+      title: "Model & Portfolio Shoots",
       description:
-        "Professional coverage of your special occasions including weddings, parties, and corporate events. Candid moments and beautiful compositions.",
+        "Portfolio and headshot sessions for models, performers and professionals, built around the look and range you need to present.",
       features: [
-        "Full day coverage",
-        "Two photographers available",
-        "100+ edited images",
-        "Print-ready files",
+        "Studio or location sessions",
+        "Multiple looks and setups",
+        "Careful attention to skin tones",
+        "Retouching and colour grading",
       ],
-      price: "From £800",
     },
     {
-      title: "Individual Portraits",
+      title: "Events & Celebrations",
       description:
-        "Professional headshots and personal portraits for business, social media, or personal use. Studio or outdoor sessions available.",
+        "Coverage of the occasions that matter — celebrations, milestones and family gatherings — photographed as they unfold, with an eye for the moments between the formal ones.",
       features: [
-        "1 hour session",
-        "Multiple outfit changes",
-        "15-20 edited images",
-        "Professional retouching",
+        "Candid and posed coverage",
+        "Photography and film available together",
+        "Edited gallery of images",
+        "Aerial coverage where suitable",
       ],
-      price: "From £250",
+    },
+    {
+      title: "Cultural Events & Live Performances",
+      description:
+        "Photography and filming for cultural events, stage productions and live performances, working around the lighting and pace of the room without interrupting it.",
+      features: [
+        "Stage and low-light experience",
+        "Discreet on-the-night coverage",
+        "Stills and video options",
+        "Colour grading for stage lighting",
+      ],
+    },
+    {
+      title: "Corporate Photography",
+      description:
+        "Headshots, team portraits, conferences and workplace photography for businesses, delivered with a consistent look across the whole set.",
+      features: [
+        "On-site at your workplace or venue",
+        "Consistent framing and grading across the set",
+        "Headshots, teams and event coverage",
+        "Files prepared for web and print",
+      ],
+    },
+    {
+      title: "Videography & Cinematography",
+      description:
+        "Cinematic filming and visual storytelling for events, performances, portraits and creative projects — bringing photography and film together for a wider range of creative possibilities.",
+      features: [
+        "Cinematic filming and edit",
+        "Colour grading by a certified colourist",
+        "Photography and film in one booking",
+        "Aerial footage where suitable",
+      ],
+    },
+    {
+      title: "Aerial Photography & Drone Cinematography",
+      description:
+        "Aerial photography and cinematic drone footage, shot by a certified drone pilot and registered UK drone operator with specialist training in Advanced Aerial Cinematography.",
+      features: [
+        "Certified pilot, registered UK operator",
+        "Advanced Aerial Cinematography trained",
+        "Cinematic aerial movement and composition",
+        "Subject to site and flight conditions",
+      ],
     },
     {
       title: "Street & Documentary",
       description:
-        "Urban photography and documentary projects capturing the essence of city life and human stories in authentic, artistic ways.",
+        "Street photography and documentary projects capturing city life and human stories as they happen, in an authentic, editorial style.",
       features: [
         "Custom project scope",
         "Multiple locations",
         "Editorial-style editing",
         "Print and digital rights",
       ],
-      price: "Custom pricing",
     },
   ];
 
@@ -59,11 +99,11 @@ export default function ServicesPage() {
           Services
         </h1>
         <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
-          Professional photography services tailored to your needs. Every session is customized to
-          capture your unique story.
+          Photography and filmmaking for people, moments and stories. Every project is approached
+          individually, so get in touch and we can shape a session around what you need.
         </p>
 
-        <div className="space-y-24">
+        <div className="space-y-16">
           {services.map((service, index) => (
             <div
               key={index}
@@ -84,7 +124,12 @@ export default function ServicesPage() {
                 </ul>
               </div>
               <div className="flex items-start justify-end">
-                <p className="text-xl font-serif">{service.price}</p>
+                <Link
+                  href="/contact"
+                  className="text-sm uppercase tracking-[0.15em] border-b border-black pb-1 hover:opacity-60 transition-opacity whitespace-nowrap"
+                >
+                  Enquire
+                </Link>
               </div>
             </div>
           ))}
@@ -93,7 +138,8 @@ export default function ServicesPage() {
         <div className="mt-24 text-center">
           <h2 className="text-3xl font-serif mb-6 font-light">Ready to Get Started?</h2>
           <p className="text-gray-600 mb-8">
-            Let's discuss your photography needs and create something beautiful together.
+            Let&apos;s discuss your photography or film project and create something beautiful
+            together.
           </p>
           <Link
             href="/contact"

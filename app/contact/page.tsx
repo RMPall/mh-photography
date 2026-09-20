@@ -33,8 +33,8 @@ export default function ContactPage() {
           Get In Touch
         </h1>
         <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
-          I'd love to hear about your photography needs. Fill out the form below or reach out
-          directly.
+          I&apos;d love to hear about your photography or film project. Fill out the form below or
+          reach out directly.
         </p>
 
         <div className="grid md:grid-cols-[1.5fr,1fr] gap-16">
@@ -120,10 +120,10 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-sm uppercase tracking-[0.1em] mb-1">Email</h3>
                     <a
-                      href="mailto:hello@7shades.photography"
+                      href="mailto:mahesh@7shades.co.uk"
                       className="text-gray-600 hover:text-black transition-colors"
                     >
-                      hello@7shades.photography
+                      mahesh@7shades.co.uk
                     </a>
                   </div>
                 </div>

@@ -1,10 +1,11 @@
-# Mahesh Padmanabhan Photography
+# 7 Shades
 
-A professional photography website built with Next.js, TypeScript, and Tailwind CSS.
+Website for 7 Shades, the photography and filmmaking studio founded by Mahesh Padmanabhan,
+based in London. Built with Next.js, TypeScript, and Tailwind CSS.
 
 ## Features
 
-- 🎨 Clean, minimal design inspired by Phil Penman's website
+- 🎨 Clean, minimal design
 - 📱 Fully responsive (mobile, tablet, desktop)
 - ⚡ Fast performance with Next.js 14
 - 🖼️ Image slider on homepage
@@ -91,8 +92,8 @@ Edit the `navLinks` array in `components/Header.tsx` to modify navigation items.
 
 ## Support
 
-For questions or issues, contact: studio@maheshphotography.com
+For questions or issues, contact: hello@7shades.photography
 
 ---
 
-Built with ❤️ by Mahesh Padmanabhan
+Built with ❤️ for 7 Shades
